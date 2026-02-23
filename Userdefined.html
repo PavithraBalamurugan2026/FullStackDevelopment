@@ -1,81 +1,73 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <style>
-        /* 1. Full-screen centering */
-        body {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #f4f7f6; /* Soft background color */
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        /* 2. The "Box" Container */
-        .calculator-box {
-            background: white;
-            padding: 30px;
-            border-radius: 15px; /* Rounded corners */
-            box-shadow: 0 10px 25px rgba(0,0,0,0.1); /* Soft shadow for depth */
-            border: 1px solid #e0e0e0;
-            text-align: center;
-            width: 300px;
-        }
-
-        input {
-            width: 80%;
-            padding: 10px;
-            margin-bottom: 15px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-
-        button {
-            padding: 10px 20px;
-            background-color: #3498db;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background 0.3s;
-        }
-
-        button:hover { background-color: #2980b9; }
-
-        #resultText {
-            margin-top: 20px;
-            font-weight: bold;
-            color: #2c3e50;
-        }
-    </style>
+<style>
+body {
+display: flex;
+align-items: center;
+justify-content: center;
+height: 100vh;
+margin: 0;
+background-color:white; 
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.calculator-box {
+background: white;
+padding: 30px;
+border-radius: 15px; 
+box-shadow: 0 10px 25px rgba(0,0,0,0.1); 
+border: 1px solid black;
+text-align: center;
+width: 300px;
+}
+input {
+width: 80%;
+padding: 10px;
+margin-bottom: 15px;
+border: 1px solid lightcrey;
+border-radius: 5px;
+}
+button {
+padding: 10px 20px;
+background-color:Skyblue;
+color: white;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+transition: background 0.3s;
+}
+button:hover
+ {
+ background-color:EarthBlue;
+ }
+#resultText
+ {
+margin-top: 20px;
+font-weight: bold;
+color:darkblue;
+}
+</style>
 </head>
 <body>
-
-    <!-- This is the Box -->
-    <div class="calculator-box">
-        <h3>Square Calculator</h3>
-        <input type="number" id="numInput" placeholder="Enter a number">
-        <button onclick="showResult()">Calculate</button>
-        <p id="resultText">Result will appear here</p>
-    </div>
-
-    <script>
-        // User-Defined Function
-        function getSquare(n) {
-            return n * n;
-        }
-
-        // Standard Functions
-        function showResult() {
-            const val = document.getElementById("numInput").value;
-            if(val === "") return; // Basic check
-            
-            const answer = getSquare(Number(val)); 
-            document.getElementById("resultText").innerText = "Result: " + answer;
-        }
-    </script>
-
+<!-- This is the Box -->
+<div class="calculator-box">
+<h3>Square Calculator</h3>
+<input type="number" id="numInput" placeholder="Enter a number">
+<button onclick="showResult()">Calculate</button>
+<p id="resultText">Result will appear here</p>
+</div>
+<script>
+function getSquare(n)
+{
+return n * n;
+}
+function showResult()
+{
+const val = document.getElementById("numInput").value;
+if(val === "") return; 
+const answer = getSquare(Number(val));
+document.getElementById("resultText").innerText = "Result: " + answer;
+}
+</script>
 </body>
 </html>
