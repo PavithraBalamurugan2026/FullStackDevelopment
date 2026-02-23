@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Formatting Cheat Sheet</title>
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; line-height: 1.6; background: #f4f7f6; padding: 20px; }
+        .container { max-width: 900px; margin: auto; background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 20px; }
+        .tag-box { border: 1px solid #eee; padding: 15px; border-radius: 8px; transition: 0.3s; }
+        .tag-box:hover { border-color: #3498db; background: #f0faff; }
+        code { background: #eee; padding: 2px 5px; border-radius: 4px; color: #e74c3c; }
+        kbd { background: #333; color: white; padding: 2px 6px; border-radius: 4px; font-size: 0.85em; }
+        mark { background: #f1c40f; padding: 0 3px; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>HTML Formatting Tags</h1>
+    <p>Use these tags to style text semantically and visually.</p>
+
+    <div class="grid">
+        <!-- 1-5: Basic Importance -->
+        <div class="tag-box"><code>&lt;b&gt;</code>: <b>Simple Bold Text</b></div>
+        <div class="tag-box"><code>&lt;strong&gt;</code>: <strong>Strong Importance</strong></div>
+        <div class="tag-box"><code>&lt;i&gt;</code>: <i>Simple Italic Text</i></div>
+        <div class="tag-box"><code>&lt;em&gt;</code>: <em>Emphasized Text</em></div>
+        <div class="tag-box"><code>&lt;mark&gt;</code>: <mark>Highlighted Text</mark></div>
+
+        <!-- 6-10: Sizing & Placement -->
+        <div class="tag-box"><code>&lt;small&gt;</code>: <small>Small Fine Print</small></div>
+        <div class="tag-box"><code>&lt;sub&gt;</code>: H<sub>2</sub>O (Subscript)</div>
+        <div class="tag-box"><code>&lt;sup&gt;</code>: E=mc<sup>2</sup> (Superscript)</div>
+        <div class="tag-box"><code>&lt;u&gt;</code>: <u>Underlined Text</u></div>
+        <div class="tag-box"><code>&lt;big&gt;</code>: <big>Bigger Text (Legacy)</big></div>
+
+        <!-- 11-15: Editorial & References -->
+        <div class="tag-box"><code>&lt;del&gt;</code>: <del>Deleted/Strikethrough</del></div>
+        <div class="tag-box"><code>&lt;ins&gt;</code>: <ins>Inserted Text</ins></div>
+        <div class="tag-box"><code>&lt;abbr&gt;</code>: <abbr title="HyperText Markup Language">HTML</abbr> (Hover me)</div>
+        <div class="tag-box"><code>&lt;cite&gt;</code>: <cite>— The Great Gatsby</cite> (Citation)</div>
+        <div class="tag-box"><code>&lt;q&gt;</code>: <q>A short inline quote.</q></div>
+
+        <!-- 16-21: Technical & Code -->
+        <div class="tag-box"><code>&lt;code&gt;</code>: <code>console.log('Hi');</code></div>
+        <div class="tag-box"><code>&lt;kbd&gt;</code>: Press <kbd>Ctrl</kbd> + <kbd>C</kbd></div>
+        <div class="tag-box"><code>&lt;samp&gt;</code>: <samp>File not found.</samp></div>
+        <div class="tag-box"><code>&lt;var&gt;</code>: <var>x</var> = <var>y</var> + 2</div>
+        <div class="tag-box"><code>&lt;dfn&gt;</code>: <dfn>HTML</dfn> is a markup language.</div>
+        <div class="tag-box"><code>&lt;pre&gt;</code>: <pre style="margin:0">Preformatted   Spaces</pre></div>
+    </div>
+</div>
+
+</body>
+</html>
